@@ -1,5 +1,7 @@
 /**
  * 열거형 활용
+ * 
+ * 숫자, 문자, 복합 타입
  */
 
 enum Language {
@@ -8,6 +10,13 @@ enum Language {
   Java = 'JAVA',
   Ruby = 'RB',
 }
+
+const Language2 = {
+  TypeScript: 'TS',
+  JavaScript: 'JS',
+  Java: 'JAVA',
+  Ruby: 'RB'
+} as const
 
 type LangCode = keyof typeof Language
 // 위와 아래가 같다.
